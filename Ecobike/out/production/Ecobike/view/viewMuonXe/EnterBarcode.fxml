@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="524.0" prefWidth="810.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="view.viewMuonXe.EnterBarcodeHandle">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="524.0" prefWidth="821.9999000000025">
+      <center>
+        <Pane prefHeight="455.0" prefWidth="683.0">
+          <children>
+            <Button layoutX="394.0" layoutY="56.0" mnemonicParsing="false" onAction="#enterBarcode" prefHeight="29.0" prefWidth="87.0" style="-fx-background-color: #FFE4B5;&#10;-fx-background-radius: 20 20 20 20;&#10;-fx-cursor: hand;" text="Search">
+              <font>
+                <Font name="Trebuchet MS" size="12.0" />
+              </font>
+              <graphic>
+                <ImageView fitHeight="18.0" fitWidth="24.00000088031475" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../../Img/search.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label id="contentTitle" layoutX="174.0" layoutY="14.0" text="Please enter the bike barcode" textFill="GOLD">
+              <font>
+                <Font name="System Bold" size="22.0" />
+              </font>
+            </Label>
+            <ImageView fitHeight="249.0" fitWidth="249.0" layoutX="219.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../Img/cyclist.png" />
+              </image>
+            </ImageView>
+            <TextField id="searchInput" fx:id="barcodeTextField" layoutX="174.0" layoutY="56.0" prefHeight="29.0" prefWidth="215.0" promptText="" style="-fx-background-radius: 10 10 10 10;" />
+          </children>
+        </Pane>
+      </center>
+      <left>
+        <VBox alignment="TOP_CENTER" prefHeight="394.0" prefWidth="136.0" spacing="10.0" style="-fx-background-color: gold; -fx-background-radius: 0 30 0 0;">
+          <children>
+            <Pane prefHeight="31.0" prefWidth="115.0" />
+            <Button id="homeButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="" styleClass="but" text="     Home" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="12.0" fx:id="x1" />
+              </font>
+              <stylesheets>
+                <URL value="@../../view/CSS/btn.css" />
+              </stylesheets>
+            </Button>
+            <Button id="rentBikeButton" alignment="BASELINE_LEFT" font="$x1" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="" styleClass="but" text="     Rent bike" textFill="WHITE">
+              <stylesheets>
+                <URL value="@../../view/CSS/btn.css" />
+              </stylesheets>
+            </Button>
+            <Button id="returnBikeButton" alignment="BASELINE_LEFT" font="$x1" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="&#10;" styleClass="but" text="     Return bike" textFill="WHITE">
+              <stylesheets>
+                <URL value="@../../view/CSS/btn.css" />
+              </stylesheets>
+            </Button>
+            <Button id="helpButton" alignment="BASELINE_LEFT" font="$x1" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="" styleClass="but" text="     Help" textFill="WHITE">
+              <stylesheets>
+                <URL value="@../../view/CSS/btn.css" />
+              </stylesheets>
+            </Button>
+            <Button id="feedbackButton" alignment="BASELINE_LEFT" font="$x1" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="" styleClass="but" text="     Feedback" textFill="WHITE">
+              <stylesheets>
+                <URL value="@../../view/CSS/btn.css" />
+              </stylesheets>
+            </Button>
+          </children>
+        </VBox>
+      </left>
+      <top>
+        <Pane prefHeight="69.0" prefWidth="821.9999000000025">
+          <children>
+            <Label layoutX="13.0" layoutY="22.0" text="EcoBikeRental" textFill="GOLD">
+              <font>
+                <Font name="Trebuchet MS" size="22.0" />
+              </font>
+            </Label>
+            <Button id="backButton" font="$x1" layoutX="161.0" layoutY="20.0" minWidth="32.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="32.0" style="-fx-background-radius: 90 90 90 90;&#10;-fx-background-color: transparent;&#10;-fx-cursor: hand;" text="" textFill="WHITE">
+              <graphic>
+                <ImageView fitHeight="24.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../../Img/bike/go-back.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField id="searchInput" layoutX="227.0" layoutY="16.0" prefHeight="35.0" prefWidth="301.0" promptText="Search by station, bike, address..." style="-fx-background-radius: 10 10 10 10;" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="494.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../Img/bike/search.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="33.333334138121785" layoutX="732.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../Img/bike/alarm.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="33.333334138121785" layoutX="771.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../Img/bike/settings.png" />
+              </image>
+            </ImageView>
+          </children>
+        </Pane>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>
